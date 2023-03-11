@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+""" from django.utils.translation import ugettext as _ """
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -127,3 +128,12 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+
+
+# Перевод на ру. язык
+
+""" LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'translations', 'locale'),
+)
+
+LANGUAGE_CODE = 'ru-ru' """
